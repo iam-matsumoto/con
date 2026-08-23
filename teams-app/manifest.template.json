@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.28/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.28",
+  "version": "1.0.0",
+  "id": "be37d2a9-ebe7-41f3-9e40-44df90eb2e8c",
+  "developer": {
+    "name": "有限会社 松本興業",
+    "websiteUrl": "{{APP_URL}}",
+    "privacyUrl": "{{APP_URL}}/privacy.html",
+    "termsOfUseUrl": "{{APP_URL}}/terms.html"
+  },
+  "name": {
+    "short": "会社予定管理",
+    "full": "有限会社 松本興業 会社予定管理システム"
+  },
+  "description": {
+    "short": "会社の予定・現場・社員情報をTeamsから確認できます。",
+    "full": "有限会社 松本興業の会社予定管理システムです。予定、現場、社内メンバー、外部業者、お知らせをMicrosoft Teamsから確認・管理できます。"
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#2CA6D6",
+  "staticTabs": [
+    {
+      "entityId": "company-schedule-home",
+      "name": "会社予定管理",
+      "contentUrl": "{{APP_URL}}/?host=teams",
+      "websiteUrl": "{{APP_URL}}/",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity"],
+  "validDomains": ["{{APP_DOMAIN}}"]
+}
